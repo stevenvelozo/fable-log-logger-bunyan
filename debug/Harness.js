@@ -1,21 +1,22 @@
+// Gather dependencies.
 const libFable = require('fable');
-
 const libFableLoggerBunyan = require('../source/Fable-Log-Logger-Bunyan.js');
 
+// Initialize fable.
 const _Fable = new libFable({
 	Product: 'fable-log-bunyan-harness',
 	Version: '1.0.0'
 });
 
-// TODO: Switch these to fable services
-const _FableLoggerBunyan = new libFableLoggerBunyan(
-	// This is passed directly to Bunyan as well.
+// Add the bunyan logger...
+_Fable.Logging.addLogger(new libFableLoggerBunyan(
+	// This is passed directly to Bunyan
 	{
-		name: 'fable-log-bunyan-harness-instance'
-	});
+		name: _Fable.settings.Product,
+		version: _Fable.settings.Version
+	}));
 
-_Fable.Logging.addLogger(_FableLoggerBunyan);
-
+// Try it out!
 _Fable.log.info('Bunyan do your thing, yo...');
 _Fable.log.info('Some objects:', { foo: 'bar', baz: 'quux'});
-_Fable.log.fatal('This was a critical wound.');
+_Fable.log.fatal('This was fatal wound.');
