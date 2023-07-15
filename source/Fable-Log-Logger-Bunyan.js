@@ -12,32 +12,32 @@ class BunyanLogger extends libBaseLogger
 
 	trace(pLogText, pLogObject)
 	{
-		this.bunyanLogger.trace(pLogText, pLogObject);
+		this.bunyanLogger.trace(pLogObject || { }, pLogText);
 	}
 
 	debug(pLogText, pLogObject)
 	{
-		this.bunyanLogger.debug(pLogText, pLogObject);
+		this.bunyanLogger.debug(pLogObject || { }, pLogText);
 	}
 
 	info(pLogText, pLogObject)
 	{
-		this.bunyanLogger.info(pLogText, pLogObject);
+		this.bunyanLogger.info(pLogObject || { }, pLogText);
 	}
 
 	warn(pLogText, pLogObject)
 	{
-		this.bunyanLogger.warn(pLogText, pLogObject);
+		this.bunyanLogger.warn(pLogObject || { }, pLogText);
 	}
 
 	error(pLogText, pLogObject)
 	{
-		this.bunyanLogger.error(pLogText, pLogObject);
+		this.bunyanLogger.error(pLogObject || { }, pLogText);
 	}
 
 	fatal(pLogText, pLogObject)
 	{
-		this.bunyanLogger.fatal(pLogText, pLogObject);
+		this.bunyanLogger.fatal(pLogObject || { }, pLogText);
 	}
 }
 
