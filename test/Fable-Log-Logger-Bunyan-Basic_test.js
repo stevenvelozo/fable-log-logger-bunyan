@@ -45,7 +45,7 @@ suite
 
 		suite
 			(
-				'Basic .v. Default Tests',
+				'Basic Default Tests',
 				() =>
 				{
 					test(

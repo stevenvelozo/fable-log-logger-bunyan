@@ -1,6 +1,6 @@
 {
     "name": "fable-log-logger-bunyan",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Bunyan logger for fable-log.",
     "main": "source/Fable-Log-Logger-Bunyan.js",
     "scripts": {
@@ -16,8 +16,8 @@
     "author": "steven velozo <steven@velozo.com>",
     "license": "MIT",
     "devDependencies": {
-        "fable": "^3.0.75",
-        "quackage": "^1.0.19"
+        "fable": "^3.0.144",
+        "quackage": "^1.0.33"
     },
     "mocha": {
         "diff": true,
@@ -39,6 +39,6 @@
     },
     "dependencies": {
         "bunyan": "^1.8.15",
-        "fable-log": "^3.0.10"
+        "fable-log": "^3.0.15"
     }
 }

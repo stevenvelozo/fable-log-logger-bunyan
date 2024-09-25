@@ -1,11 +1,16 @@
 const libBaseLogger = require('fable-log').LogProviderBase;
 const libBunyan = require('bunyan');
 
+const libPackage = require('../package.json');
+
 class BunyanLogger extends libBaseLogger
 {
 	constructor(pLogStreamSettings, pLogStreamHash)
 	{
 		super(pLogStreamSettings, pLogStreamHash);
+
+		/** @type {Object} */
+		this._Package = libPackage;
 
 		this.bunyanLogger = libBunyan.createLogger(this._Settings);
 	}
