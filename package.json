@@ -16,8 +16,8 @@
     "author": "steven velozo <steven@velozo.com>",
     "license": "MIT",
     "devDependencies": {
-        "fable": "^3.0.144",
-        "quackage": "^1.0.33"
+        "fable": "^3.1.53",
+        "quackage": "^1.0.48"
     },
     "mocha": {
         "diff": true,
@@ -39,6 +39,6 @@
     },
     "dependencies": {
         "bunyan": "^1.8.15",
-        "fable-log": "^3.0.15"
+        "fable-log": "^3.0.16"
     }
 }
