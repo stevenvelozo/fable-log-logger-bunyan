@@ -17,7 +17,7 @@
     "license": "MIT",
     "devDependencies": {
         "fable": "^3.1.55",
-        "quackage": "^1.0.58"
+        "quackage": "^1.0.59"
     },
     "mocha": {
         "diff": true,
