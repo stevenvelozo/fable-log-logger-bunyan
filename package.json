@@ -1,6 +1,6 @@
 {
     "name": "fable-log-logger-bunyan",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Bunyan logger for fable-log.",
     "main": "source/Fable-Log-Logger-Bunyan.js",
     "scripts": {
@@ -39,6 +39,6 @@
     },
     "dependencies": {
         "bunyan": "^1.8.15",
-        "fable-log": "^3.0.16"
+        "fable-log": "^3.0.18"
     }
 }
