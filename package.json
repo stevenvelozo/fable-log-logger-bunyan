@@ -7,7 +7,7 @@
         "test": "npx mocha -u tdd --exit",
         "start": "node source/Fable-Log-Logger-Bunyan.js",
         "tests": "npx mocha -u tdd --exit -R spec --grep",
-        "coverage": "npx nyc --reporter=lcov --reporter=text-lcov ./node_modules/mocha/bin/_mocha -- -u tdd -R spec",
+        "coverage": "npx quack coverage",
         "build": "npx quack build",
         "docker-dev-build": "docker build ./ -f Dockerfile_LUXURYCode -t fable-log-logger-bunyan-image:local",
         "docker-dev-run": "docker run -it -d --name fable-log-logger-bunyan-dev -p 21912:8080 -p 31205:8086 -v \"$PWD/.config:/home/coder/.config\"  -v \"$PWD:/home/coder/fable-log-logger-bunyan\" -u \"$(id -u):$(id -g)\" -e \"DOCKER_USER=$USER\" fable-log-logger-bunyan-image:local",
