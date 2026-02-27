@@ -4,9 +4,9 @@
     "description": "Bunyan logger for fable-log.",
     "main": "source/Fable-Log-Logger-Bunyan.js",
     "scripts": {
-        "test": "npx mocha -u tdd --exit",
+        "test": "npx quack test",
         "start": "node source/Fable-Log-Logger-Bunyan.js",
-        "tests": "npx mocha -u tdd --exit -R spec --grep",
+        "tests": "npx quack test -g",
         "coverage": "npx quack coverage",
         "build": "npx quack build",
         "docker-dev-build": "docker build ./ -f Dockerfile_LUXURYCode -t fable-log-logger-bunyan-image:local",
