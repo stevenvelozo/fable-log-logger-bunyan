@@ -35,7 +35,7 @@ let fable = new libFable(
 	LogStreams: []
 });
 
-// Create the bunyan logger — settings are passed directly to Bunyan
+// Create the bunyan logger -- settings are passed directly to Bunyan
 let bunyanLogger = new libFableLoggerBunyan(
 {
 	name: fable.settings.Product
