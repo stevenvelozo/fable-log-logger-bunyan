@@ -1,0 +1,7 @@
+{
+	"Name": "fable-log-logger-bunyan",
+	"Version": "1.0.5",
+	"Description": "Bunyan logger for fable-log.",
+	"GeneratedAt": "2026-04-10T01:49:36.374Z",
+	"GitCommit": "9f1484c"
+}
